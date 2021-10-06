@@ -11,19 +11,19 @@ How are we doing it ? The keyword or phrase is searched in Bing images and the t
 4. For backend open the folder Flask_Colors and run command python app.py and it would start at http://127.0.0.1:5000
 5. If you face any CORS issue kindly open chrome using disabled CORS chrome.exe --disable-web-security --disable-gpu --user-data-dir=~Temp
 
-#Backend under the hood
+# Backend under the hood
 1. We are using bing-image-downloader to download the images.
 2. Using Opencv we are reading the downlaoded images
 3. Then we are using K_Means clustering to find the 3 possible n_clusters for each image
 4. Based on the clusters we find their hex color code and send them back.
 5. We have packed all this using Flask API, where a simple get method will take in the query and return the hex codes in a list
 
-#Frontend 
+# Frontend 
 1. Created an simple one page angular project
 2. It has a input field to capture the keywords/phrases and on clicking the fetch color button we are sending the keywords to the API 
 3. Based on the response we are setting the background of each Div with Hex color code 
 4. We have used ngx-spinner for showing spinner/loader
 
-*Note : Based on the internet and system speed it might take some time for the colors to be displayed
+**Note : Based on the internet and system speed it might take some time for the colors to be displayed
 
 
