@@ -1,0 +1,12 @@
+<ngx-spinner bdColor = "rgba(0, 0, 0, 0.8)" size = "medium" color = "#fff" type = "ball-atom" [fullScreen] = "true"><p style="color: white" > Coloring your thoughts </p></ngx-spinner>
+<div id="bg1">
+<div class="topBlock">
+<h1 style="color: #FFFFFF;">Enter your thoughts to fetch Colors</h1>
+<input type=text #topic name="topic"/>
+<button (click)="getVal(topic.value)">Fetch Colors</button>
+</div>
+
+<div class="masonry-with-columns-2" id="masonry-with-columns-2">
+  <div *ngFor="let block of blocks" [ngStyle]="getDesign(block)"> {{block}}</div>
+</div>
+</div>
