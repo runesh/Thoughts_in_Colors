@@ -18,7 +18,7 @@ How are we doing it ? The keyword or phrase is searched in Bing images and the t
 4. Based on the clusters we find their hex color code and send them back.
 5. We have packed all this using Flask API, where a simple get method will take in the query and return the hex codes in a list
 
-# Frontend 
+# Frontend under the JS
 1. Created an simple one page angular project
 2. It has a input field to capture the keywords/phrases and on clicking the fetch color button we are sending the keywords to the API 
 3. Based on the response we are setting the background of each Div with Hex color code 
