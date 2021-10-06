@@ -22,5 +22,8 @@ How are we doing it ? The keyword or phrase is searched in Bing images and the t
 1. Created an simple one page angular project
 2. It has a input field to capture the keywords/phrases and on clicking the fetch color button we are sending the keywords to the API 
 3. Based on the response we are setting the background of each Div with Hex color code 
+4. We have used ngx-spinner for showing spinner/loader
+
+*Note : Based on the internet and system speed it might take some time for the colors to be displayed
 
 
